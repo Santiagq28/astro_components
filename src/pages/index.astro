@@ -1,11 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Counter from '../components/vue/Counter.vue';
+
 import Card from '../components/Card.astro';
 import Button from '../components/Button.astro';
 import ButtonTwo from '../components/ButtonTwo.astro';
+import Hability from '../components/Hability.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+	<Counter client:load />
+
+
+
+
+<!--
+	<Hability text="Habilidad 1"/>
+	<Hability text="Habilidad 2"/>
+	<Hability text="Habilidad 3"/>
+
 	<Button />
 	<Button text="Cancelar" isRounded/>
 	<Button text="Permitir"/>
@@ -18,7 +31,7 @@ import ButtonTwo from '../components/ButtonTwo.astro';
 			X
 		</span>
 		
-	</ButtonTwo>
+	</ButtonTwo>-->
 </Layout>
 
 
